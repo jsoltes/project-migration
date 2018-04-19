@@ -13,12 +13,9 @@ public class Person implements java.io.Serializable
    private int age;
    private java.lang.Boolean married;
    private java.math.BigDecimal salary;
-   private java.lang.Integer department;
    @org.kie.api.definition.type.Label("date of birth")
    private java.util.Date birthdate;
    private java.lang.Character sex;
-   private java.lang.Double radio;
-
    private bxms.formmodeler_migration.Address address;
 
    private java.util.List<bxms.formmodeler_migration.Address> addressList;
@@ -67,16 +64,6 @@ public class Person implements java.io.Serializable
       this.salary = salary;
    }
 
-   public java.lang.Integer getDepartment()
-   {
-      return this.department;
-   }
-
-   public void setDepartment(java.lang.Integer department)
-   {
-      this.department = department;
-   }
-
    public java.util.Date getBirthdate()
    {
       return this.birthdate;
@@ -95,16 +82,6 @@ public class Person implements java.io.Serializable
    public void setSex(java.lang.Character sex)
    {
       this.sex = sex;
-   }
-
-   public java.lang.Double getRadio()
-   {
-      return this.radio;
-   }
-
-   public void setRadio(java.lang.Double radio)
-   {
-      this.radio = radio;
    }
 
    public bxms.formmodeler_migration.Address getAddress()
@@ -129,19 +106,16 @@ public class Person implements java.io.Serializable
    }
 
    public Person(java.lang.String name, int age, java.lang.Boolean married,
-         java.math.BigDecimal salary, java.lang.Integer department,
-         java.util.Date birthdate, java.lang.Character sex,
-         java.lang.Double radio, bxms.formmodeler_migration.Address address,
+         java.math.BigDecimal salary, java.util.Date birthdate,
+         java.lang.Character sex, bxms.formmodeler_migration.Address address,
          java.util.List<bxms.formmodeler_migration.Address> addressList)
    {
       this.name = name;
       this.age = age;
       this.married = married;
       this.salary = salary;
-      this.department = department;
       this.birthdate = birthdate;
       this.sex = sex;
-      this.radio = radio;
       this.address = address;
       this.addressList = addressList;
    }
