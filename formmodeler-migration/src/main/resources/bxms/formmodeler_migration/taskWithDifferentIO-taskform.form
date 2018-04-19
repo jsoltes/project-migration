@@ -3,21 +3,29 @@
 <property name="name" value="taskWithDifferentIO-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="5" name="person_addressList" bag-type="bxms.formmodeler_migration.Address" type="MultipleSubform" id="1039613142">
+<field position="0" name="boolean" type="CheckBox" id="985235052">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;addressList (person)quot;"/>
+<property name="label" value="quot;enquot;,quot;_boolean (boolean)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_person/addressList"/>
-<property name="outputBinding" value="person_/addressList"/>
-<property name="fieldClass" value="java.util.List"/>
+<property name="inputBinding" value="_boolean"/>
+<property name="outputBinding" value="boolean_"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
 </field>
-<field position="10" name="person_salary" type="InputTextBigDecimal" id="1605290954">
+<field position="1" name="cv" type="Document" id="1300387738">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;salary (person)quot;"/>
+<property name="label" value="quot;enquot;,quot;_cv (cv)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_person/salary"/>
-<property name="outputBinding" value="person_/salary"/>
-<property name="fieldClass" value="java.math.BigDecimal"/>
+<property name="inputBinding" value="_cv"/>
+<property name="outputBinding" value="cv_"/>
+<property name="fieldClass" value="org.jbpm.document.Document"/>
+</field>
+<field position="2" name="float" type="InputTextFloat" id="778765959">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;_float (float)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_float"/>
+<property name="outputBinding" value="float_"/>
+<property name="fieldClass" value="java.lang.Float"/>
 </field>
 <field position="3" name="integer" type="InputTextInteger" id="1839116601">
 <property name="fieldRequired" value="false"/>
@@ -27,29 +35,38 @@
 <property name="outputBinding" value="integer_"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="12" name="string" type="InputText" id="194094006">
+<field position="4" name="person_address" type="Subform" id="1694944886">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;_string (string)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;address (person)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_string"/>
-<property name="outputBinding" value="string_"/>
-<property name="fieldClass" value="java.lang.String"/>
+<property name="inputBinding" value="_person/address"/>
+<property name="outputBinding" value="person_/address"/>
+<property name="defaultSubform" value="AddressForm.form"/>
+<property name="fieldClass" value="java.lang.Object"/>
 </field>
-<field position="11" name="person_sex" type="InputTextCharacter" id="1383474751">
+<field position="5" name="person_addressList" bag-type="bxms.formmodeler_migration.Address" type="MultipleSubform" id="1039613142">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;sex (person)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;addressList (person)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_person/sex"/>
-<property name="outputBinding" value="person_/sex"/>
-<property name="fieldClass" value="java.lang.Character"/>
-</field>
-<field position="2" name="float" type="InputTextFloat" id="778765959">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;_float (float)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="_float"/>
-<property name="outputBinding" value="float_"/>
-<property name="fieldClass" value="java.lang.Float"/>
+<property name="inputBinding" value="_person/addressList"/>
+<property name="outputBinding" value="person_/addressList"/>
+<property name="defaultSubform" value="AddressForm.form"/>
+<property name="previewSubform" value="AddressForm.form"/>
+<property name="tableSubform" value="AddressForm.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
 </field>
 <field position="6" name="person_age" type="InputTextPrimitiveInteger" id="1902112721">
 <property name="fieldRequired" value="false"/>
@@ -67,13 +84,13 @@
 <property name="outputBinding" value="person_/birthdate"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="4" name="person_address" type="Subform" id="1694944886">
+<field position="8" name="person_married" type="CheckBox" id="272265318">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;address (person)quot;"/>
+<property name="label" value="quot;enquot;,quot;married (person)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_person/address"/>
-<property name="outputBinding" value="person_/address"/>
-<property name="fieldClass" value="java.lang.Object"/>
+<property name="inputBinding" value="_person/married"/>
+<property name="outputBinding" value="person_/married"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
 </field>
 <field position="9" name="person_name" type="InputText" id="1791137075">
 <property name="fieldRequired" value="false"/>
@@ -83,29 +100,29 @@
 <property name="outputBinding" value="person_/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="0" name="boolean" type="CheckBox" id="985235052">
+<field position="10" name="person_salary" type="InputTextBigDecimal" id="1605290954">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;_boolean (boolean)quot;"/>
+<property name="label" value="quot;enquot;,quot;salary (person)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_boolean"/>
-<property name="outputBinding" value="boolean_"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
+<property name="inputBinding" value="_person/salary"/>
+<property name="outputBinding" value="person_/salary"/>
+<property name="fieldClass" value="java.math.BigDecimal"/>
 </field>
-<field position="1" name="cv" type="Document" id="1300387738">
+<field position="11" name="person_sex" type="InputTextCharacter" id="1383474751">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;_cv (cv)quot;"/>
+<property name="label" value="quot;enquot;,quot;sex (person)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_cv"/>
-<property name="outputBinding" value="cv_"/>
-<property name="fieldClass" value="org.jbpm.document.Document"/>
+<property name="inputBinding" value="_person/sex"/>
+<property name="outputBinding" value="person_/sex"/>
+<property name="fieldClass" value="java.lang.Character"/>
 </field>
-<field position="8" name="person_married" type="CheckBox" id="272265318">
+<field position="12" name="string" type="InputText" id="194094006">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;married (person)quot;"/>
+<property name="label" value="quot;enquot;,quot;_string (string)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="_person/married"/>
-<property name="outputBinding" value="person_/married"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
+<property name="inputBinding" value="_string"/>
+<property name="outputBinding" value="string_"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="_boolean" name="#B29FE4" type="basicType" outId="boolean_" value="java.lang.Boolean" id="boolean"/>
 <dataHolder inputId="_cv" name="#FF54A7" type="basicType" outId="cv_" value="org.jbpm.document.Document" id="cv"/>
