@@ -1,0 +1,51 @@
+
+<form id="495354208">
+<property name="name" value="taskWithSameIO-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="boolean" type="CheckBox" id="1881094927">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;_boolean_ (boolean)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_boolean_"/>
+<property name="outputBinding" value="_boolean_"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="float" type="InputTextFloat" id="1118192646">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;_float_ (float)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_float_"/>
+<property name="outputBinding" value="_float_"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="4" name="string" type="InputText" id="750494687">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;_string_ (string)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_string_"/>
+<property name="outputBinding" value="_string_"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="integer" type="InputTextInteger" id="310491044">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;_integer_ (integer)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_integer_"/>
+<property name="outputBinding" value="_integer_"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="cv" type="Document" id="2135521558">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;_cv_ (cv)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_cv_"/>
+<property name="outputBinding" value="_cv_"/>
+<property name="fieldClass" value="org.jbpm.document.Document"/>
+</field>
+<dataHolder inputId="_boolean_" name="#B29FE4" type="basicType" outId="_boolean_" value="java.lang.Boolean" id="boolean"/>
+<dataHolder inputId="_cv_" name="#FF54A7" type="basicType" outId="_cv_" value="org.jbpm.document.Document" id="cv"/>
+<dataHolder inputId="_float_" name="#FBB767" type="basicType" outId="_float_" value="java.lang.Float" id="float"/>
+<dataHolder inputId="_integer_" name="#9BCAFA" type="basicType" outId="_integer_" value="java.lang.Integer" id="integer"/>
+<dataHolder inputId="_string_" name="#BBBBBB" type="basicType" outId="_string_" value="java.lang.String" id="string"/>
+</form>
