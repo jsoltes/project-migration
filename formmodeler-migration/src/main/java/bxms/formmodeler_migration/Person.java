@@ -21,6 +21,8 @@ public class Person implements java.io.Serializable
 
    private bxms.formmodeler_migration.Address address;
 
+   private java.util.List<bxms.formmodeler_migration.Address> addressList;
+
    public Person()
    {
    }
@@ -115,10 +117,22 @@ public class Person implements java.io.Serializable
       this.address = address;
    }
 
+   public java.util.List<bxms.formmodeler_migration.Address> getAddressList()
+   {
+      return this.addressList;
+   }
+
+   public void setAddressList(
+         java.util.List<bxms.formmodeler_migration.Address> addressList)
+   {
+      this.addressList = addressList;
+   }
+
    public Person(java.lang.String name, int age, java.lang.Boolean married,
          java.math.BigDecimal salary, java.lang.Integer department,
          java.util.Date birthdate, java.lang.Character sex,
-         java.lang.Double radio, bxms.formmodeler_migration.Address address)
+         java.lang.Double radio, bxms.formmodeler_migration.Address address,
+         java.util.List<bxms.formmodeler_migration.Address> addressList)
    {
       this.name = name;
       this.age = age;
@@ -129,6 +143,7 @@ public class Person implements java.io.Serializable
       this.sex = sex;
       this.radio = radio;
       this.address = address;
+      this.addressList = addressList;
    }
 
 }
