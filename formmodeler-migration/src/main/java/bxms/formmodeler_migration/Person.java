@@ -14,10 +14,14 @@ public class Person implements java.io.Serializable
    private java.lang.Boolean married;
    private java.math.BigDecimal salary;
    private java.lang.Integer department;
-   @org.kie.api.definition.type.Label(value = "date of birth")
+   @org.kie.api.definition.type.Label("date of birth")
    private java.util.Date birthDate;
    private java.lang.Character sex;
    private java.lang.Double radio;
+
+   private bxms.formmodeler_migration.Address address;
+
+   private java.util.List<bxms.formmodeler_migration.Address> addressList;
 
    public Person()
    {
@@ -107,6 +111,34 @@ public class Person implements java.io.Serializable
          java.lang.Boolean married, java.math.BigDecimal salary,
          java.lang.Integer department, java.util.Date birthDate,
          java.lang.Character sex, java.lang.Double radio)
+
+   public bxms.formmodeler_migration.Address getAddress()
+   {
+      return this.address;
+   }
+
+   public void setAddress(bxms.formmodeler_migration.Address address)
+   {
+      this.address = address;
+   }
+
+   public java.util.List<bxms.formmodeler_migration.Address> getAddressList()
+   {
+      return this.addressList;
+   }
+
+   public void setAddressList(
+         java.util.List<bxms.formmodeler_migration.Address> addressList)
+   {
+      this.addressList = addressList;
+   }
+
+   public Person(java.lang.String name, java.lang.Integer age,
+         java.lang.Boolean married, java.math.BigDecimal salary,
+         java.lang.Integer department, java.util.Date birthDate,
+         java.lang.Character sex, java.lang.Double radio,
+         bxms.formmodeler_migration.Address address,
+         java.util.List<bxms.formmodeler_migration.Address> addressList)
    {
       this.name = name;
       this.age = age;
@@ -116,6 +148,8 @@ public class Person implements java.io.Serializable
       this.birthDate = birthDate;
       this.sex = sex;
       this.radio = radio;
+      this.address = address;
+      this.addressList = addressList;
    }
 
 }
